@@ -6,15 +6,8 @@ const profile = require('./routers/profile.js');
 const folders = require('./routers/folders.js');
 
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-
 app.use('/me', profile)
 app.use('/folders', folders)
-
-
 
 
 
