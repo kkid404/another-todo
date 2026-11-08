@@ -6,8 +6,8 @@ const profile = require('./routers/profile.js');
 const folders = require('./routers/folders.js');
 
 
-app.use('/', profile)
-app.use('/', folders)
+app.use('/me', profile)
+app.use('/folders', folders)
 
 
 

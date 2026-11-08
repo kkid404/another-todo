@@ -1,19 +1,19 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/folders', (req, res) => {
+router.get('/', (req, res) => {
   res.send('here user can will see a folders');
 });
 
-router.get('/folders/:folder', (req, res) => {
+router.get('//:folder', (req, res) => {
   res.send('here user will can see the folder');
 });
 
-router.patch('/folders/:folder', (req, res) => {
+router.patch('/:folder', (req, res) => {
   res.send('here user will can change the folders');
 });
 
-router.post('/folders', (req, res) => {
+router.post('/', (req, res) => {
   res.send('here user will create the folders');
 });
 

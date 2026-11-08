@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/me', (req, res) => {
+router.get('/', (req, res) => {
   res.send('here user will see the profile');
 });
 
-router.patch('/me', (req, res) => {
+router.patch('/', (req, res) => {
   res.send('here user will can change the profile');
 });
 
