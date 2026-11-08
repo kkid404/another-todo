@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
   res.send('here user can will see a folders');
 });
 
-router.get('//:folder', (req, res) => {
+router.get('/:folder', (req, res) => {
   res.send('here user will can see the folder');
 });
 
