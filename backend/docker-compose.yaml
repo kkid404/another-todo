@@ -2,12 +2,10 @@ services:
   api:
     build: .
     ports:
-      - "3000:3000"
+      - "8000:8000"
     volumes:
-      - .:/app
-      - /app/node_modules
+      - .:/usr/src/app
     environment:
-      - NODE_ENV=development
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/devdb
     depends_on:
       - postgres
