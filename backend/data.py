@@ -15,3 +15,6 @@ def get_all():
 
 def get_by_id(id):
     return conn.execute("SELECT * FROM users WHERE id = %s", (id,)).fetchall()
+
+def get_by_email(email):
+    return conn.execute("SELECT * FROM users WHERE email = %s", (email,)).fetchall()
